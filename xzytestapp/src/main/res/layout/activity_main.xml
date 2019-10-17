@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:orientation="vertical"
+         android:layout_height="match_parent"
+         tools:context=".MainActivity">
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/tv_versions"
+             android:text="20190924"
+             />
+          <Button
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="灭屏"
+
+              android:onClick="gotosleep"
+              />
+
+          <EditText
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/et_hour"
+              android:hint="时"
+              android:inputType="number"
+              android:lines="1"
+              android:maxLines="1"
+              />
+
+          <EditText
+              android:lines="1"
+              android:maxLines="1"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/et_min"
+              android:inputType="number"
+              android:hint="分"
+              />
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+             <Button
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:layout_height="wrap_content"
+                 android:onClick="setShutAlarm"
+                 android:text="设置定时关机"
+                 />
+             <Button
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:layout_height="wrap_content"
+                 android:onClick="setBootAlarm"
+
+                 android:text="设置定时开机"
+                 />
+         </LinearLayout>
+
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="指定需要添加到白名单的应用包名"
+              />
+          <EditText
+              android:lines="1"
+              android:maxLines="1"
+              android:inputType="textVisiblePassword"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/et_package"
+              android:hint="包名"
+              />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+          <Button
+              android:layout_width="0dp"
+              android:layout_weight="1"
+              android:layout_height="wrap_content"
+              android:onClick="addWhiteFile"
+              android:text="添加"
+              />
+
+          <Button
+              android:layout_width="0dp"
+              android:layout_weight="1"
+              android:layout_height="wrap_content"
+              android:onClick="newWhiteFile"
+              android:text="新建"
+              />
+
+         <Button
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:layout_height="wrap_content"
+             android:onClick="getWhiteFile"
+             android:text="查询白名单列表"
+             />
+    </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+             <Button
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:layout_height="wrap_content"
+                 android:onClick="unInstall"
+                 android:text="unInstall"
+                 />
+             <Button
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:layout_height="wrap_content"
+                 android:onClick="install"
+                 android:text="install"
+                 />
+         </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+         <Button
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:layout_height="wrap_content"
+             android:onClick="reset"
+             android:text="恢复出厂设置"
+             />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:onClick="setNV_ON"
+            android:text="底部导航栏打开"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:onClick="setNV_OFF"
+            android:text="底部导航栏关闭"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:onClick="setAndroidBeam_ON"
+            android:text="Android Beam 打开"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:onClick="setAndroidBeam_OFF"
+            android:text="Android Beam 关闭"
+            />
+    </LinearLayout>
+         <Button
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:onClick="setDefault"
+             android:text="恢复部分默认系统属性 比如时区东八区字体，默认大小"
+             />
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+         <Button
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:layout_height="wrap_content"
+             android:onClick="nfc_on"
+             android:text="打开NFC "
+             />
+
+
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:onClick="getNFCStatus"
+            android:text="NFC状态获取"
+            />
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:onClick="nfc_off"
+            android:text="关闭NFC "
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+         <Button
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:layout_height="wrap_content"
+             android:onClick="gotoSettings"
+             android:text="系统设置页面"
+             />
+
+         <Button
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:layout_height="wrap_content"
+             android:onClick="gotoNFCapp"
+             android:text="NFC测试app页面"
+             />
+     </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:onClick="gotoMTKlogger"
+            android:text="MTKLogger页面"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:onClick="goBack"
+            android:text="返回"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:onClick="lockScreen"
+            android:text="lockScreen"
+            />
+         </LinearLayout>
+     </LinearLayout>
+</ScrollView>

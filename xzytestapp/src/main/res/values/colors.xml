@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="bg_default">#FFBABABA</color>
+    <color name="text_default">#FF505050</color>
+    <color name="text_alarm">#FF506650</color>
+    <color name="text_tip">#FFA0A0A0</color>
+    <color name="text_button">#FF3F3F3F</color>
+    <color name="control_background">#cc4285f4</color>
+</resources>
