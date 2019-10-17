@@ -145,35 +145,7 @@ public class MainActivity extends Activity {
     public void chooseCamera() {
     	Log.d("ChenMinCam", TAG + " " + "chooseCamera 138 cameraFront = " + cameraFront);
     	Log.d("ChenMinCam", TAG + " " + "chooseCamera 147 cameraCurStatu = " + cameraCurStatu);
-        //if the camera preview is the front
-/*        if (cameraFront) {
-        	Log.d("ChenMinCam", TAG + " " + "chooseCamera 141");
-            int cameraId = findBackFacingCamera();
-            if (cameraId >= 0) {
-                //open the backFacingCamera
-                //set a picture callback
-                //refresh the preview
 
-                mCamera = Camera.open(cameraId);                
-                mPicture = getPictureCallback();            
-                mPreview.refreshCamera(mCamera);
-            }
-        } else {
-        	Log.d("ChenMinCam", TAG + " " + "chooseCamera 153 camerathree = " + camerathree);
-        	if (!camerathree) {
-                int cameraId = findFrontFacingCamera();
-                if (cameraId >= 0) {
-                    //open the backFacingCamera
-                    //set a picture callback
-                    //refresh the preview
-
-                    mCamera = Camera.open(cameraId);
-                    mPicture = getPictureCallback();
-                    mPreview.refreshCamera(mCamera);
-                }   		      		
-        	}
-
-        }*/
     	
         int cameraId = ((cameraCurStatu +1) % 3);//findFrontFacingCamera();
         if (cameraId >= 0) {
