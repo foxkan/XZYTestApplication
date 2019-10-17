@@ -49,6 +49,7 @@ public class MainActivity extends Activity {
 /*
 git 测试上传
  */
+/////////////////////////////
     private void initUI() {
         tv_versions = findViewById(R.id.tv_versions);
         et_hour = findViewById(R.id.et_hour);
